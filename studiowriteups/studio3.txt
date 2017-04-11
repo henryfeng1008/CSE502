@@ -1,0 +1,88 @@
+Studio 3 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+
+Part A
+
+What are three data types that can serve as T?
+int, float, double.
+
+Which class did you pick to examine its compareTo method?
+AbstractChronology
+
+How did its compareTo method impose a natural order on that class's instances?
+It compares this chronology to another chronology.
+
+Part B
+
+How does compareTo work?  Does it always return either -1, 0, or +1?
+If a is equal to b, a 0 will be returned.
+If a is less than b, a value less than 0 will be returned.
+If a is greater than b, a value greater than 0 will be returned.
+
+
+Part C
+
+From your inspection of the LinkedList<T> class's source code:
+Given a LinkedList<T> of size n, what is the asymptotic complexity, worst-case, 
+for performing each of the following operations?
+
+  1)  Appending to the end of that list  addLast(..)
+  		O(1)
+  2)  Prepending to the beginning of that list   addFirst(...)
+  		O(n)
+  3)  Inserting an element in the middle of the list  add(size/2, .....)
+  		O(logn)
+  
+And for your implementation of a PriorityQueue using the Unordered List, 
+given n elements already in the queue, what is the asymptotic complexity, 
+worst-case for performing each of the following operations?
+  
+  4)  extractMin
+  		O(n)
+  5)  insert
+  		O(1)
+  6)  isEmpty
+  		O(1)
+  
+Part D
+
+From your implementation of OrderedArray, what is the asymptotic complexity, worst-case, for performing each of the following operations?
+
+  1)  Adding an element at the end of the array
+  		O(n)
+  
+  2)  Inserting an element at the beginning of the array
+  		O(n)
+  
+  3)  Inserting an element in the middle of the list
+		O(logn)
+And for your implementation of a PriorityQueue using the Ordered Array, 
+given n elements already in the queue, what is the asymptotic complexity, 
+worst-case for performing each of the following operations?
+  
+  4)  extractMin
+  		O(n)
+  5)  insert
+  		O(n)
+  6)  isEmpty
+  		O(1)
+ 
+ Are there situations when you would want to use the OrderedArray or the UnorderedList instead of
+ the binary heap described in class?   Explain please.
+ When the order of the date doesn't matter, a unorderedlist is better
+ if the order matters, orderedarray is better.

@@ -1,0 +1,129 @@
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.Hanyu Feng    452106
+2.Shuyu Xu      450633
+3.Tengzhou Hu   451757
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Question A1: 
+	What do you see in both plots? 
+	The plots are similar to quadratic.
+	
+	Are there any differences between the two?
+	The plot of tick is strict quadratic while the plot of time is not.
+	
+	What could account for those differences?
+	The difference could be addressed to the situation of the computer, that is when the computer is multitasking
+	or the computer is just too fast.
+	
+Discuss this (and all your responses for this assignment) with your TA as you go.
+
+Question A2:
+	Why do the times provided for Quadratic produce such a nice plot, while the original values of Linear did not?
+	Because the cost of running is higher in Quadratic than Linear, so it could be measured in milliseconds. 
+	
+	
+Question A3: 
+	From the runs you have tried so far, how does the placement of ticker.tick() calls affect the plots you see? 
+	In particular, do the changes affect the shapes of the curves, the values plotted, or both
+	
+	If the ticker.tick() is placed between the for loops, the plot is linear, that is ticks=n. If the ticker.tick()
+	is placed before the for loop, the ticks is constant 1. So, the placement of ticker.tick() affect the plots in 
+	the shape of the curves and values.
+	
+	
+Question A4: 
+	In terms of n, how would you characterize, in the most simple terms, 
+	the time and ticks curves that have been generated so far?
+	
+	Ticks is a function of n, it depends on how the program is constructed. Time is relevant to n, the relationship
+	between time and n is not as precise as the one between ticks and n.
+		
+Question A5: 
+	What would happen if you deleted all ticker.tick() calls in the innermost loop,
+	while leaving other calls to ticker.tick() that you just placed in run()?
+	
+	If the ticker.tick() is placed between the for loops, the plot is linear, that is ticks=n. If the ticker.tick()
+	is placed before the for loop, the ticks is constant 1. If the ticker.tick() is placed both before and between 
+	the for loop, the plot is the summation of the previous plots.
+	
+	
+Question B1:
+	What do you see? How do the curves reflect the code inside AddsTwoNumbers?
+	The curve of ticks is a constant of 100000000, while the curve of time grows at the beginning and stays stable
+	after n=1000.
+	
+	Do you think the value of n matters here in terms of the time it takes to perform the operation?
+	Why or why not?
+	n doesn't matters because both ticks and time remain constant or relatively stable when n gets large.
+	
+Question B2:
+	What do the data and plot tell you about the time it takes to allocate an array of n integers?
+	The time costed increases with n linearly, with minor exception.
+	
+	Is it reasonable to say that the line of code
+
+ 		this.array = new int[this.n]
+ 		
+	takes a constant amount of time, independent of the value of this.n?
+	No, it depends on n.
+	
+	
+Question B3:
+	Do the ticks agree in shape with the time we measured in running the Allocates code?
+	No, the shapes are different.
+	
+Question B4:
+	Are the plots more similar to each other than before?
+	What does this tell you about how much time it takes to allocate an array of n integers?
+	The shapes are more similar then before. The time it takes to allocate an array grows with n.
+	
+Question B5:
+	Which group do you expect to finish first?
+	The decimal team finish first
+	
+	Can you formalize, in terms of n the amount of work (ticks)
+	that each group must do to write n in the form required for that group?
+	For decimal group the amount of work would be 1; the amount of work of tally mark team is n.
+
+
+	Both groups achieve the same result, namely the recording of an integer n.
+
+		Under what circumstances is the decimal notation more efficient than tally marks?
+		When the number is large enough.
+		Under what circumstances is the tally mark notation more efficient than decimal notation?
+		When the number is 0.
+		
+	If you are not sure, take a look the link from the assignment web page.
+	
+Question D1:
+	How would you describe the curve you see?
+	As a team, think about possible polynomial functions that could generate such a curve.
+	Write your answer here:
+	
+	there is a jump from 3 to 4 at n=1, then ticks remain constant.
+	
+	
+Question E1:
+	What is the closed form solution for T(n)?
+	
+	(1+n)*n/2
+	
+Question E2:
+	What is the closed form solution for T(n)?
+	Can you express this result in terms of n, as well as k?
+	Write your answer here:
+	
+	in terms of k:2^k-1
+	in terms of n:n-1
+	

@@ -1,0 +1,57 @@
+-------------------
+CSE247 Robot tester starts testing spath on 2017-03-28 06:29:47 -0500
+
+========
+Testing in GradingRepos/repos/cse247-s17-students-feng.hanyu: spath as of 2017-03-24 09:00
+========
+Now in: /Users/roncytron/Desktop/cse247sp17/cse247-support/GradingRepos/repos/cse247-s17-students-feng.hanyu
+Going back in time to: 2017-03-24 09:00
+At hash 3a3248b4a9a55bdf7f561460535aa2aadb941cae
+Your branch is up-to-date with 'origin/master'.
+Already up-to-date.
+
+Buildfile: /Users/roncytron/Desktop/cse247sp17/cse247-support/build.xml
+
+copytest:
+     [echo] would copy from /Users/roncytron/git/cse247-f16-students key feng.hanyu testfilesource testing/TestShortestPathSilent package spath repo GradingRepos/repos/cse247-s17-students-feng.hanyu
+     [copy] Copying 1 file to /Users/roncytron/Desktop/cse247sp17/cse247-support/GradingRepos/repos/cse247-s17-students-feng.hanyu/labs/spath/testing
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Compiling the code
+Buildfile: /Users/roncytron/Desktop/cse247sp17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling spath/ShortestPaths
+    [mkdir] Created dir: /Users/roncytron/Desktop/cse247sp17/cse247-support/GradingRepos/repos/cse247-s17-students-feng.hanyu/bin
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/cse247sp17/cse247-support/GradingRepos/repos/cse247-s17-students-feng.hanyu/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/roncytron/Desktop/cse247sp17/cse247-support/build.xml
+
+compile:
+     [echo] Compiling spath/testing/TestShortestPathSilent
+    [javac] Compiling 1 source file to /Users/roncytron/Desktop/cse247sp17/cse247-support/GradingRepos/repos/cse247-s17-students-feng.hanyu/bin
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Running test testing.TestShortestPathSilent
+Buildfile: /Users/roncytron/Desktop/cse247sp17/cse247-support/build.xml
+
+test:
+    [junit] Running spath.testing.TestShortestPathSilent
+    [junit] Testsuite: spath.testing.TestShortestPathSilent
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.691 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.691 sec
+    [junit] 
+    [junit] Testcase: test took 2.681 sec
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+================
+Lab is counted as working
+================
+
+CSE247 Robot tester ends testing spath on 2017-03-28 06:29:54 -0500
+-------------------

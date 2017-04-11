@@ -1,0 +1,54 @@
+Studio 2 write up
+
+Your TA's name:
+
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.
+2.
+3.
+4.
+5.
+6.
+
+Below each question, type in your short, to-the-point answers.
+
+Part A
+
+What do you see in the plots for ticks and time?
+Both plots is close to some kind of quadratic function, the one of time has some minor exception 
+
+How would you characterize those curves?
+For the plot of ticks it is close to 0.5*n^2
+For the plot of time it is almost a quadratic function with minor exception
+
+Based on the current code for addLast, why do you see this behavior?
+For the time plot the minor exception is caused by the multitasking of the computer, the 
+quadratic form is caused by the method of addLast and AddLastBase. For every operation of adding, the program need to
+detect the tail of the list and add the element to the tail. 
+
+
+Part B
+
+What behavior do you see now for appending n items to a list if you use a tail reference?
+The plot is linear. About 4*n.
+
+While we have reasoned so far only about time, if we are adding n elements to the end of a list, what is the asymptotic complexity of the additional space required when using the tail reference?
+O(n).
+
+Under what conditions would you recommend using a linked list with a tail reference vs. a linked list without at tail reference?
+If the number of elements in this linked list is large, tail reference is necessary. Under any conditions, linked linst with
+tail reference is better than that without a tail reference. 
+ 
+
+Part C
+
+Why does getSize() take the time it does?
+Because the getSize() method is O(n) it need ticks as much as the length of the list. We need to search the list everytime.
+
+How did you achieve Θ(1) performance for getSize()?
+Count the number of the element when adding the new element. then return the number when run the getSize() method.

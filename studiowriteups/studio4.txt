@@ -1,0 +1,70 @@
+Studio 4 write up
+
+Your TA's name:
+Oscar
+
+
+Students in your studio group:
+
+    Name        Student ID (begins with a 4)
+	
+1.Hanyu Feng	452106
+2.shuyu xu		450633
+3.Hanru Zhang    452671
+4.Tengzhou 	Hu   451757
+5.Chao Wang      454753
+6.Wenqing Song   451883
+
+Substitution
+
+
+Using substitution, prove that the solution to T(n)=T(n-1)+10 is T(n)=10n
+T(n) = 10n, so T(n-1) = 10(n-1)
+T(n) = T(n-1)+10 = 10(n-1)+10 = 10n
+
+Using substitution, show that T(n)=T(n-1)+10 is O(n-squared)
+T(n) = 10n < c *n^2
+10 < c*n
+take c = 10, when n > 1 this stands.
+
+Recursion Tree Solutions
+
+1.	level n:	T(n) = T(n-1)+2n-1
+	level n-1:	T(n-1) = T(n-2)+2(n-1)-1
+	.
+	.
+	.
+	level 0:	T(0) = 10
+	T(n) = T(n-1)+2n-1 = T(n-2)+2(n-1)-1+2n-1
+	T(n) = T(0)+2n+2(n-1)+2(n-2)+...+2-1-1-1...-1 = T(0)+2*(1+n)*n/2-n = 10+n^2 
+	
+2.	level n:	T(n) = T(n-1)+4n-5
+	level n-1:	T(n-1) = T(n-2)+4(n-1)-5
+	.
+	.
+	.
+	level 0:	T(0) = 5
+	T(n) = T(n-1)+4n-5 = T(n-2)+4(n-1)-5+4n-5
+	T(n) = T(0)+4n+4(n-1)+4(n-2)+...+4-5-5-5...-5 = T(0)+4*(1+n)*n/2-5n = 5+2*n^2-3n
+
+3.	level n:	T(n) = T(n/5)+7
+	level n/5:	T(n/5) = T(n/25)+7
+	.
+	.
+	.
+	level 1:	T(1) = T(0)+7
+	level 0:	T(0) = 21
+	T(n) = T(n/5)+7 = T(n/25)+7+7 = T(1)+ 7*log5(n) = 28+7*log5(n)
+	
+4.	level n:	T(n) = 4T(n/2)+2n
+	level n/2:	T(n/2) = 4T(n/4)+2(n/2)
+	level n/4:	T(n/4) = 4T(n/8)+2(n/4)
+	.
+	.
+	.
+	level 1:	T(1) = 4T(0)+2 = 2
+	level 0:	T(0) = 0
+	T(n) = 4T(n/2)+2n = 4*(4T(n/4)+2(n/2))+2n = 16*T(n/4)+4n+2n = 64*T(n/8)+8n+4n+2n
+		=4^log2(n)*T(1)+n*n+(n/2)n+...+8n+4n+2n=2*4^log2(n)+2n*(2^log2(n)-1) = 2*n*(n-1)+2*n^2
+	
+	
